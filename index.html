@@ -1,212 +1,272 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <!-- Meta tags Obrigatórias -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<head>
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Blog Pessoal</title>
-  </head>
-  <body>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <!-- nav -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Blog Pessoal</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(página atual)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#projetos">Projetos </a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="#sobre">Sobre Esteban</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="#hobbye">Hobbyes</a>
-              </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Contato
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="https://www.linkedin.com/in/gustavo-esteban/" target="_blank" >LinkedIn</a>
-                <a class="dropdown-item" href="https://github.com/Gustavo-Esteban" target="_blank">GitHub</a>
-                <a class="dropdown-item" href="https://www.instagram.com/gustavo_esteban/" target="_blank">Instagram</a>
-              </div>
-            </li>
-          </ul>
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="login.html">Login</a>
-              </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cadastre-se</button>
-          </form>
-        </div>
-      </nav>
-      <!-- /nav -->
+  <title>Blog Pessoal</title>
+  <style>
+    html{
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
 
-<!-- jumbotron -->
-      <div>
-        <div id="projetos" class="jumbotron jumbotron-fluid">
-            <div class="container">
-              <h1 class="display-4">Projetos</h1>
-              <p class="lead">Projetos desenvolvidos no Bootcamp da Generation</p>
-            </div>
+<body class="w-100">
+
+  <!-- nav -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Blog Pessoal</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+      aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#projetos">Projetos </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#sobre">Sobre Esteban</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#hobbye">Hobbyes</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Contato
+          </a>
+          <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item text-success" href="https://www.linkedin.com/in/gustavo-esteban/" target="_blank">LinkedIn</a>
+            <a class="dropdown-item text-success" href="https://github.com/Gustavo-Esteban" target="_blank">GitHub</a>
+            <a class="dropdown-item text-success" href="https://www.instagram.com/gustavo_esteban/" target="_blank">Instagram</a>
           </div>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" data-toggle="modal" data-target="#modal">Cadastre-se</button>
+      </form>
+    </div>
+  </nav>
+  <!-- /nav -->
 
-      </div>
-<!-- /jumbotron -->
+  <!-- jumbotron -->
+  <div>
+    <div id="projetos" class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Projetos</h1>
+        <p class="lead">Projetos desenvolvidos no Bootcamp da Generation</p>
 
-<!-- card -->
-    <div class="container">
-        <div class="card-deck">
+        <!-- card -->
+        <div class="container">
+          <div class="card-deck">
             <div class="card">
               <img class="card-img-top" src="assets/imagem/API blog pessoal.jpg" alt="API Blog Pessoal">
               <div class="card-body">
                 <h5 class="card-title">API Blog Pessoal</h5>
-                <p class="card-text">Primeira API construida em Spring boot do blog pessoal, testada em Postman e deploy em Swagger.</p>
-                <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+                <p class="card-text">Primeira API construida em Spring boot do blog pessoal, testada em Postman e deploy
+                  em Swagger.</p>
+                <a href="https://github.com/Gustavo-Esteban/Blog_Pessoal" target="_blank" class="btn btn-success mr-auto">Ir para projeto</a>
               </div>
             </div>
             <div class="card">
               <img class="card-img-top" src="assets/imagem/pag1.png" alt="Pagina 1 do Meu Site top 10 animes">
               <div class="card-body">
                 <h5 class="card-title">Meu Primeiro Site</h5>
-                <p class="card-text">Meu primeiro site construido com Html Css e JavaScript, com validação de nome, email e assunto.</p>
-                <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+                <p class="card-text">Meu primeiro site construido com Html Css e JavaScript, com validação de nome,
+                  email e assunto.</p>
+                  <a href="https://github.com/Gustavo-Esteban/fundamentos-web" target="_blank" class="btn btn-success mr-auto">Ir para projeto</a>
               </div>
             </div>
           </div>
-    </div>
-    <div class="container text-center">
-        <h1 class="center">Video Mostrando meu site!</h1>
-    </div>
-    
-    <div class="container d-flex justify-content-center">
-        <video width="720" height="540" controls="controls" autoplay="autoplay">
-        <source src="assets/videos/2021-03-11 11-59-11.mp4" type="video/mp4">
-</div>
-<!-- /card -->
+        </div>
+        <div class="container text-center">
+          <h1 class="center mt-5">Video Mostrando meu site!</h1>
+        </div>
 
-<!-- jumbotron -->
-<div>
-    <div id="sobre" class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-4">Sobre Esteban</h1>
-          <p class="lead">Um pequeno Pitch sobre mim</p>
+        <div class="container d-flex justify-content-center p-5">
+          <video width="400" height="175" controls="controls" autoplay="autoplay">
+            <source src="assets/videos/2021-03-11 11-59-11.mp4" type="video/mp4">
+        </div>
+        <!-- /card -->
+      </div>
+
+      <!-- /jumbotron -->
+
+      <!-- sobre mim -->
+      <div id="sobre" class="bg-dark">
+        <div class="container text-success ">
+
+
+
+          <h1 class="display-4 mt-5 p-5">Sobre Esteban</h1>
+          <h4>Bom dia galera, Meu nome é gustavo tenho 21 anos estou graduando Analise e desenvolvimento de sistemas
+            na universidade Unopar.<br>
+            Venho da Area da panificação, eu atuava como padeiro e confeiteiro,
+            uma area bem distinta da programação.<br> Mas neste trabalho eu pude desfrutar das soft skills,
+            onde eu trabalhava muito com gestão de tempo e trabalho em equipe, por mais que seja uma area distinta
+            consigo carregar grandes esforços ali adquiridos.<br>
+            O meu interesse na programação vem la da minha infancia, onde eu e meus amigos jogavamos um jogo que eramos
+            super
+            fans,
+            e o nosso objetivo quando saisse da escola era fazer uma faculdade de desenvolvimento de jogos e trabalhar
+            nessa
+            empresa do jogo,
+            sonho de criança.<br>
+            Mas depois de crescido mesmo trabalhando eu tentava conciliar trabalho, estudo e o conhecimento da
+            faculdade! E
+            foi em uma conversa com uma amiga na faculdade,
+            que por sinal ja e formada na Generation, ela me indicou, e foi nesse momento que eu resolvi largar tudo que
+            eu
+            tinha construido ate então,
+            pra me jogar de cabeça no bootcamp, e dar nao so o melhor de mim, mas me entregar por completo, nessa minha
+            nova
+            jornada aprendi sobre logica de programação em Portugol, e me aprofundei em Java com todos os conceitos em
+            POO, em seguida desenvolvi uma API em Spring Boot realizei testes em postman e fiz o deploy em swagger,após
+            aprender sobre Back-End adentrei em Front-End aprendendo html, css e js indo mais afundo com o framework
+            bootstrap e em seguida comecei a programar em Angular para o desenvolvimento do Projeto Integrador, e estou
+            disposto,
+            a evoluir muito em minha carreira como Desenvolvedor Fullstack Angular Spring.</h4>
+          <hr class="mt-5">
         </div>
       </div>
-  </div>
-  <!-- /jumbotron -->
+      <!-- /sobre mim -->
 
-  <!-- sobre mim -->
-  <div class="container">
-     <h4>Bom dia galera, Meu nome é gustavo tenho 21 anos estou graduando Analise  e desenvolvimento de sistemas
-        na universidade Unopar.<br>
-        Venho da Area da panificação, eu atuava como padeiro e confeiteiro,
-        uma area bem distinta da programação.<br> Mas neste trabalho eu pude desfrutar das soft skills,
-        onde eu trabalhava muito com gestão de tempo e trabalho em equipe, por mais que seja uma area distinta 
-        consigo carregar grandes esforços ali adquiridos.<br>
-        O meu interesse na programação vem la da minha infancia, onde eu e meus amigos jogavamos um jogo que eramos super fans,
-        e o nosso objetivo quando saisse da escola era fazer uma faculdade de desenvolvimento de jogos e trabalhar nessa empresa do jogo,
-        sonho de criança.<br>
-        Mas depois de crescido mesmo trabalhando eu tentava conciliar trabalho, estudo e o conhecimento da faculdade! E foi em uma conversa com uma amiga na faculdade,
-        que por sinal ja e formada na generation, ela me indicou, e foi nesse momento que eu resolvi largar tudo que eu tinha construido ate então,
-        pra me jogar de cabeça no bootcamp, e dar nao so o melhor de mim, mas me entregar por completo, nessa minha nova jornada, e estou disposto,
-        a evoluir muito em minha carreira como Desenvolvedor Fullstack Angular Spring.</h4>
-  </div>
-<!-- /sobre mim -->
-
- 
-  <hr>
-  <!-- jumbotron -->
-<div>
-    <div id="hobbye" class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-4">Hobbye</h1>
-          <p class="lead">Animes que gosto de ver</p>
-        </div>
-      </div>
-  </div>
-  <!-- /jumbotron -->
-
-  <!-- carousel -->
-<div class="container">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="assets/imagem/Naruto.jpg" alt="Imagem do anime naruto">
-            <div class="carousel-caption d-none d-md-block">
+      <!-- carousel -->
+      <div id="hobbye" class="container mt-5">
+        <h1 class="text-center p-5">Animes que curto assistir</h1>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="assets/imagem/Naruto.jpg" alt="Imagem do anime naruto">
+              <div class="carousel-caption d-none d-md-block">
                 <h5>Naruto</h5>
               </div>
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="assets/imagem/One Piece.jpg" alt="Imagem do anime one piece">
-            <div class="carousel-caption d-none d-md-block">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="assets/imagem/One Piece.jpg" alt="Imagem do anime one piece">
+              <div class="carousel-caption d-none d-md-block">
                 <h5>One Piece</h5>
               </div>
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="assets/imagem/Hunter X Hunter.jpg" alt="Imagem do anime Hunter X Hunter">
-            <div class="carousel-caption d-none d-md-block">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="assets/imagem/Hunter X Hunter.jpg" alt="Imagem do anime Hunter X Hunter">
+              <div class="carousel-caption d-none d-md-block">
                 <h5>Hunter X Hunter</h5>
               </div>
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="assets/imagem/Shingeki.jpg" alt="Imagem do anime Shingeki">
-            <div class="carousel-caption d-none d-md-block">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="assets/imagem/Shingeki.jpg" alt="Imagem do anime Shingeki">
+              <div class="carousel-caption d-none d-md-block">
                 <h5>Atack on Titan</h5>
               </div>
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="assets/imagem/Black Clover.jpg" alt="Imagem do anime Black Clover">
-            <div class="carousel-caption d-none d-md-block">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="assets/imagem/Black Clover.jpg" alt="Imagem do anime Black Clover">
+              <div class="carousel-caption d-none d-md-block">
                 <h5>Black Clover</h5>
               </div>
+            </div>
           </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+          </a>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Anterior</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Próximo</span>
-        </a>
       </div>
-</div>    
-  <!-- /carousel -->
+      <!-- /carousel -->
+
+    </div>
+  </div>
+  </div>
+
+<!-- Modal -->
+<div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-dark text-success">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalLabel">Cadastro</h5>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Endereço de email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Senha</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-success"  data-dismiss="modal" href="login.html">Cadastre-se</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /Modal -->
+
+  <!-- JavaScript (Opcional) -->
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+<footer class="bg-dark">
+  <div class="row w-100">
+    <div class="col-md-12  d-flex justify-content-center">
+        <a href="https://www.linkedin.com/in/gustavo-esteban/" target="_blank" class="p-3">
+        <img class="tm-social" width="50px" height="50px" src="assets/imagem/linkedin.png">
+        </a>
+        <a href="https://github.com/Gustavo-Esteban" target="_blank" class="p-3">
+        <img class="tm-social" width="50px" height="50px" src="assets/imagem/github.png">
+        </a>
+        <a href="https://www.instagram.com/gustavo_esteban/" target="_blank" class="p-3">
+        <img class="tm-social" width="50px" height="50px" src="assets/imagem/instagram.png">
+        </a>
+    </div>
+  </div>
+
+  <div class="row w-100">
+    <div class="col-md-12 text-center">
+      <p class="text-success">Todos os direitos reservados: Gustavo Esteban &copy</p>
+    </div>
+  </div>
+  
   
 
-    <!-- JavaScript (Opcional) -->
-    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
-  <footer>
-      <hr>
-      <div class="container d-flex justify-content-center">
-        <p>Todos os direitos reservados: Gustavo Esteban &copy</p>
-      </div>
-      
-  </footer>
+</footer>
+
 </html>
